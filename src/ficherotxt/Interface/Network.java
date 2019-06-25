@@ -1,7 +1,7 @@
 
 
 /////   REVISAR LA CLASE GUARDAR PARA SETEAR DE NUEVO LA VARIABLE DE PRUEBA PUERTO//////////////////////////
-
+//Test 14:57
 package ficherotxt.Interface;
 
 import Variables.VariablesConfig;
