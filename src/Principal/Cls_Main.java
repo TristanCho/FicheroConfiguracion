@@ -15,7 +15,7 @@ public class Cls_Main {
         
         nw = new Network();
         nw.setVisible(true);
-        vc = new VariablesConfig();
+        //vc = new VariablesConfig();
         vc.Lectura(nw);
         
         

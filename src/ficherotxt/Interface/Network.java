@@ -5,44 +5,38 @@
 package ficherotxt.Interface;
 
 import Variables.VariablesConfig;
+import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.security.Principal;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 
 
-
 public class Network extends javax.swing.JFrame {
     
-    
-
-  
     public Network() {
         initComponents();
-   /*
-      Properties Propiedades = new Properties();
       
+      Properties Propiedades = new Properties();
+      jtf_UserDDBB.setText("Prueba");
       
       InputStream Archivo;
 
         try {
-
             Archivo = new FileInputStream("src/Archivador/ArchivoPropiedades.properties");
             Propiedades.load(Archivo);
-            //String Puerto=NuevoPuerto;
-            //Propiedades.setProperty("Puerto", Puerto);
-            System.out.println("Prueba desde network");
             
-
+            System.out.println("Prueba desde network 1");
+          
         } catch (IOException ex) {
             System.out.println("Revisar la ruta del Archivo de propiedades");
-        }
-      
-        */
-      
+        }  
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -269,7 +263,7 @@ public class Network extends javax.swing.JFrame {
 
     private void btn_EditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_EditarActionPerformed
        
-        jtf_UserDDBB.setEnabled(true);
+        jtf_UserDDBB.setEnabled(true);        
         jtf_PassDDBB.setEnabled(true);
         jtf_DDBB.setEnabled(true);
         jtf_Puerto.setEnabled(true);
@@ -280,8 +274,7 @@ public class Network extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_EditarActionPerformed
 
     private void btn_GuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_GuardarActionPerformed
-        
-        
+                 
         jtf_UserDDBB.setEnabled(false);
         jtf_PassDDBB.setEnabled(false);
         jtf_DDBB.setEnabled(false);
@@ -291,22 +284,21 @@ public class Network extends javax.swing.JFrame {
         jtf_RemoteServer2.setEnabled(false);
         
         try {
+            
             Guardar();
         } catch (IOException ex) {
             Logger.getLogger(Network.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        
+        }      
     }//GEN-LAST:event_btn_GuardarActionPerformed
 
+    
         public void Guardar() throws IOException{
         
             System.out.println("Click en Guardar"); 
+            
          // vc.Escritura();
-       
-       
-          
     }
+       
         
 
     

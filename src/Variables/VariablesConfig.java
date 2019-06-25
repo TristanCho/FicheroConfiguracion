@@ -55,8 +55,7 @@ public class VariablesConfig {
         nw.jtf_DDBB.setText(DDBB);
         nw.jtf_Puerto.setText(Puerto);
         
-    }
-    
+    }    
     
      public void Escritura(Network nw) {
         //Declara objeto para las Propiedades
@@ -73,8 +72,7 @@ public class VariablesConfig {
         } catch (IOException ex) {
             System.out.println("Revisar la ruta del Archivo de propiedades");
         }
-*/
-       
+*/       
         UserDDBB=nw.jtf_UserDDBB.getText();
         PassDDBB=nw.jtf_PassDDBB.getText();
         LocalServer=nw.jtf_LocalServer.getText();
@@ -83,8 +81,7 @@ public class VariablesConfig {
         DDBB=nw.jtf_DDBB.getText();
         Puerto=nw.jtf_Puerto.getText();         
 
-
-         //Reconfiguracion 
+        //Reconfiguracion 
         
         PropiedadesEscritura.setProperty( "UserDDBB",UserDDBB.toString());
         PropiedadesEscritura.setProperty( "PassDDBB",PassDDBB.toString());
@@ -95,14 +92,12 @@ public class VariablesConfig {
         
          System.out.println("Puerto Desde Escritura="+Puerto);
         
-       
         try {
             //Graba el Archivo con las modificaciones realizadas
             PropiedadesEscritura.store(new FileWriter("src/Archivador/ArchivoPropiedades.properties"), "Propiedades Actualizadas Correctamente");
         } catch (IOException ex) {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
     }
-
 }
