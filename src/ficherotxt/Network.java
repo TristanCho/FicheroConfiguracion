@@ -2,7 +2,7 @@
 
 /////   REVISAR LA CLASE GUARDAR PARA SETEAR DE NUEVO LA VARIABLE DE PRUEBA PUERTO//////////////////////////
 //Test 14:57
-package ficherotxt.Interface;
+package ficherotxt;
 
 import Variables.VariablesConfig;
 import java.io.FileInputStream;
@@ -282,22 +282,11 @@ public class Network extends javax.swing.JFrame {
         jtf_LocalServer.setEnabled(false);
         jtf_RemoteServer.setEnabled(false);
         jtf_RemoteServer2.setEnabled(false);
-        
-        try {
-            
-            Guardar();
-        } catch (IOException ex) {
-            Logger.getLogger(Network.class.getName()).log(Level.SEVERE, null, ex);
-        }      
+             
     }//GEN-LAST:event_btn_GuardarActionPerformed
 
     
-        public void Guardar() throws IOException{
-        
-            System.out.println("Click en Guardar"); 
-            
-         // vc.Escritura();
-    }
+   
        
         
 
